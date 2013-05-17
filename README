@@ -1,0 +1,18 @@
+
+This is an Objective-C wrapper around the MongoDB C driver.
+
+It is intended for use with Nu but may be useful in other 
+Objective-C programming applications.
+
+Tim Burks
+
+C source is taken verbatim from http://github.com/mongodb/mongo-c-driver
+and is copyright 2009-2013 10gen Inc.
+
+Objective-C source is copyright 2013 Radtastical Inc.
+
+LICENSE
+
+Unless otherwise specified in a source file, sources in this
+repository are published under the terms of the Apache License version
+2.0, a copy of which is in this repository as APACHE-2.0.txt.
