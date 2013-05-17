@@ -1,5 +1,6 @@
 
 #import "RadBSON.h"
+#import "platform.h"
 #include "bson.h"
 
 @protocol NuCellProtocol

@@ -4,6 +4,9 @@
 #include "mongo.h"
 #include "gridfs.h"
 
+#include <sys/types.h>
+#include <unistd.h>
+
 @interface RadBSON ()
 {
 @public

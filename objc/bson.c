@@ -22,7 +22,7 @@
 #include <limits.h>
 
 #include "bson.h"
-#include "encoding.h"
+#include "bson_encoding.h"
 
 const int initialBufferSize = 128;
 

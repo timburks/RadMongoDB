@@ -38,7 +38,7 @@
 
 
 #include "bson.h"
-#include "encoding.h"
+#include "bson_encoding.h"
 
 /*
  * Index into the table below with the first byte of a UTF-8 sequence to

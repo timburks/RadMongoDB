@@ -7,13 +7,13 @@
 (case SYSTEM
       ("Darwin"
                (set @arch (list "x86_64"))
-               (set @cflags "-I ./src -g -std=gnu99 -fobjc-arc -DDARWIN")
+               (set @cflags "-DDARWIN -I ./objc -g -fobjc-arc")
                (set @ldflags  "-framework Foundation -framework Nu"))
       ("Linux"
               (set @arch (list "i386"))
               (set gnustep_flags ((NSString stringWithShellCommand:"gnustep-config --objc-flags") chomp))
               (set gnustep_libs ((NSString stringWithShellCommand:"gnustep-config --base-libs") chomp))
-              (set @cflags "-I ./src -g -std=gnu99 -DLINUX -I/usr/local/include #{gnustep_flags}")
+              (set @cflags "-DLINUX -I . -I ./objc -g -fobjc-arc -fobjc-nonfragile-abi -fblocks #{gnustep_flags}")
               (set @ldflags "#{gnustep_libs} -lNu"))
       (else nil))
 
