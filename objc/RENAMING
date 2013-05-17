@@ -1,0 +1,3 @@
+
+Note: encoding.[ch] was renamed to bson_encoding.[ch] to 
+avoid conflicts with files in the GNU runtime.
