@@ -246,11 +246,11 @@ int oid_inc() {
 {
     RadBSON *keyBSONObject = convertToBSONObject(key);
     bson output;
-    return mongo_create_index(&conn,
-                              [collection cStringUsingEncoding:NSUTF8StringEncoding],
-                              &(keyBSONObject->bsonValue),
-                              options,
-                              &output);
+    return (mongo_create_index(&conn,
+                               [collection cStringUsingEncoding:NSUTF8StringEncoding],
+                               &(keyBSONObject->bsonValue),
+                               options,
+                               &output) == MONGO_OK);
 }
 
 - (RadMongoDBCursor *) find:(id) query inCollection:(NSString *) collection
